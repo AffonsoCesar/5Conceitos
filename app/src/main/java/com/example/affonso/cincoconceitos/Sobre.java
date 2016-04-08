@@ -13,13 +13,10 @@ import android.widget.TextView;
  */
 public class Sobre extends Fragment{
 
-    private TextView textView;
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.sobre, container, false);
-        textView = (TextView)view.findViewById(R.id.textView6);
-        textView.setText("Sobre");
         return view;
     }
 }

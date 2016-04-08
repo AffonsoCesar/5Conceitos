@@ -9,4 +9,8 @@
         <item name="colorButtonNormal">#558B2F</item>
     </style>
 
+    <style name="ActionBar" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:icon">@drawable/ic_launcher</item>
+    </style>
+
 </resources>

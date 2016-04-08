@@ -1,21 +1,23 @@
 package com.example.affonso.cincoconceitos;
 
-import android.app.FragmentManager;
 import android.graphics.Color;
 import android.support.v4.app.Fragment;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.Toolbar;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
     private ListView listView;
-    String []lista = new String[] {"Views","TextView","EditText", "Button", "CheckBox", "Sobre"};
+    String []lista = new String[] {"View","TextView","EditText", "Button", "CheckBox", "Toggle  Button"};
     ArrayAdapter<?> adapter;
     android.support.v4.app.FragmentManager fm = getSupportFragmentManager();
 
@@ -32,8 +34,10 @@ public class MainActivity extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                TextView txt = (TextView) view;     //funciona
+                TextView txt = (TextView) view;
                 txt.setTextColor(Color.GRAY);
+
+
                 if (position == 0) {
                     Fragment f1 = new Fragment01();
                     fm.beginTransaction().replace(R.id.ladodireito, f1).commit();
@@ -55,5 +59,29 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+
+        ActionBar actionBar = getSupportActionBar();
+        if (actionBar != null) {
+            actionBar.setDisplayHomeAsUpEnabled(false);
+            actionBar.setIcon(R.drawable.ic_launcher);
+
+        }
+    }
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_main, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+
+        int id = item.getItemId();
+
+        if(id == R.id.action_sobre){
+            Toast.makeText(this, "Projeto Final do Curso - Google Study Jams 2016 - Android for Beginners", Toast.LENGTH_LONG).show();
+        }
+
+        return super.onOptionsItemSelected(item);
     }
 }

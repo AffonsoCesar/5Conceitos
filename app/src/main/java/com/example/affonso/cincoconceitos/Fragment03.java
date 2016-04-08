@@ -16,9 +16,6 @@ public class Fragment03 extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.frag_03, container, false);
-        TextView textView = (TextView)view.findViewById(R.id.textView2);
-        textView.setText("EditText");
-
         return view;
     }
 }

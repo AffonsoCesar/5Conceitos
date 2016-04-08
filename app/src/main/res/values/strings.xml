@@ -1,3 +1,54 @@
 <resources>
     <string name="app_name">Cinco Conceitos</string>
+    <string name="View">O que é uma View?\n
+        \n"          "Uma View é similar a um JComponent, é um item que pode ser adicionado a tela onde o usuário poderá ver e interagir com ele.
+        \n"          "Todas as tags de Views no Android tem suporte ao atributo id, é com ele que conseguimos acessar nossa tela após inflá-la.
+        \n"          "As declarações de novos ids devem começar com ‘@+id/’ e depois disso atribuimos o valor que vai ser o id.
+        \n"          "Abaixo veremos alguns componentes que estão incluidos em uma View, eles podem ser um: TextView, EditText, Button ou CheckBox!
+        \n"          "Clique sobre os menus ao lado para saber mais informações. Boa Leitura!!!</string>
+
+    <string name="TextView">O que é um TextView?\n
+        \n"          "Sempre que escolhemos a opção “Create Activity” quando estamos criando um projeto, o ADT se encarregará de criar uma classe e um main.xml que é simplesmente um TextView com as palavras “Hello World!” escritas.
+        \n"          "O TextView é usado para exibir texto para o usuário, assim como o JLabel do Swing. Podemos controlar sua aparência e tamanho pelo XML, basta modificar os atributos na tag TextView, alguns desses atributos são:
+        \n\n-> android:text: O valor será o texto do componente;
+        \n\n-> android:textColor: O valor da cor no formato ‘#RRGGBB’ em hexadecimal, é a cor do texto;
+        \n\n-> android:textSize: Tamanho da fonte, deve ser indicado em px, ex: ’12px’;
+        \n\n-> android:textStyle: Style do texto (bold, italic);
+        \n\n-> android:background: Uma cor no formato #RRGGBB ou um drawable;
+        \n\n"        "Alguns atributos são valores pré-defenidos como os do android:textStyle, mesmo assim, ainda é possivel usar mais de um valor no atributo, é aqui que entra o operador pipe “|”.
+        \n"          "Por exemplo, se quisermos o texto em negrito usamos “bold”, em itálico usamos o valor “italic”, mas se quisermos que o texto seja negrito+itálico, podemos usar o pipe juntando os dois: “bold|italic”.</string>
+
+    <string name="EditText">O que é um EditText?\n
+        \n"          "Enquanto o TextView exibe texto como um JLabel, quem oferece ao usuário um campo para ele colocar texto é o EditText (assim como o JTextField) que é filho do TextView.
+        \n"          "Este componente não declara nenhum atributo XML novo, mas usa os do TextView, a diferença é que ele realmente permite edição.
+        \n"          "Para tornar ele editável ou não, usamos o atributo android:editable com true ou false (true é o default). O TextView mesmo com true não permite edição.
+        \n"          "Abaixo veremos um exemplo de tela usando um EditText:</string>
+
+    <string name="Button" translatable="false">O que é um Button?\n
+        \n"          "É um simples botão com algo escrito assim como o JButton. É através deles que o usuário sabe que alguma ação será realizada quando clicar.
+        \n"          "O Button e EditText estendem as funcionalidades do TextView e compartilham os mesmos atributos de texto.
+        \n"          "Abaixo veremos um exemplo de tela utilizando o Button:</string>
+    <string name="Button.1">"          "Nesta tela, existem 3 buttons, 2 para marcar o gol de ambos os times e 1 abaixo para zerar todo o placar.</string>
+
+    <string name="CheckBox">O que é um CheckBox?\n
+        \n"          "É um botão que permite ao usuario alternar entre as opções marcado/desmarcado. Ele também estende TextView, e o valor atribuído em ‘android:text’ é o texto visível ao lado do CheckBox.
+        \n"          "Abaixo veremos um exemplo de tela mostrando um Checkbox selecionado e um não selecionado pelo usuário:</string>
+
+    <string name="Checkbox.1">"          "Nesta tela, percebemos que há um CheckBox marcado e um não marcado, o marcado está indicado com o valor ‘true’ e o CheckBox que não foi marcado aparece com o valor ‘false’.</string>
+
+    <string name="ToggleButton">O que é um ToggleButton?\n
+        \n"          "ToggleButton são botões como o CheckBox, mas indicam marcado/desmarcado com uma ‘luz’ invés do efeito de desenho de um “check”.
+        \n"          "O atributo ‘android:text’ não tem efeito nesse componente, por padrão o texto é alternado entre ON e OFF, sendo possivel usar os atributos como color, style, size e etc.. para modificar a aparência desse texto.
+        \n"          "Esse componente tem dois atributos a mais para sua tag. São eles:
+        \n\n-> android:textOn: O texto que será exibido quando estado for ON
+        \n\n-> android:textOff: O texto que será exibido quando estado for OFF
+        \n\n"          "Abaixo veremos um exemplo de um botão toggleButton:</string>
+
+    <string name="ToggleButton.1" translatable="false">"          "Bem, chegamos ao fim deste pequeno tutorial de conceitos sobre uma View, espero que você tenha gostado do conteúdo e que ele venha a contribuir com o seu aprendizado sobre Views.
+        \n"          "Em breve teremos mais novidades sobre novos conceitos, até a próxima!</string>
+
+    <string name="ToggleButton.1IN">"          "Bem, chegamos ao fim deste pequeno tutorial de conceitos sobre uma View, espero que você tenha gostado do conteúdo e que ele venha a contribuir com o seu aprendizado sobre Views.
+        \n"          "Em breve teremos mais novidades sobre novos conceitos, até a próxima!</string>
+
+    <string name="label">5 Conceitos sobre uma View!</string>
 </resources>

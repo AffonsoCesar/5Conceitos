@@ -12,21 +12,23 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_margin="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
             android:layout_marginTop="16dp"
-            android:text="O que é uma View?"
+            android:fontFamily="casual"
+            android:textStyle="bold|italic"
+            android:text="@string/View"
             android:textColor="@color/md_text_white"
             android:textSize="14sp" />
 
         <ImageView
-            android:id="@+id/livros"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_margin="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
             android:src="@drawable/livros" />
     </LinearLayout>
 </ScrollView>
