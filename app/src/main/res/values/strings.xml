@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Cinco Conceitos</string>
+    <string name="app_name" translatable="false">Cinco Conceitos</string>
     <string name="View">O que é uma View?\n
         \n"          "Uma View é similar a um JComponent, é um item que pode ser adicionado a tela onde o usuário poderá ver e interagir com ele.
         \n"          "Todas as tags de Views no Android tem suporte ao atributo id, é com ele que conseguimos acessar nossa tela após inflá-la.
@@ -24,7 +24,7 @@
         \n"          "Para tornar ele editável ou não, usamos o atributo android:editable com true ou false (true é o default). O TextView mesmo com true não permite edição.
         \n"          "Abaixo veremos um exemplo de tela usando um EditText:</string>
 
-    <string name="Button" translatable="false">O que é um Button?\n
+    <string name="Button">O que é um Button?\n
         \n"          "É um simples botão com algo escrito assim como o JButton. É através deles que o usuário sabe que alguma ação será realizada quando clicar.
         \n"          "O Button e EditText estendem as funcionalidades do TextView e compartilham os mesmos atributos de texto.
         \n"          "Abaixo veremos um exemplo de tela utilizando o Button:</string>
@@ -44,11 +44,11 @@
         \n\n-> android:textOff: O texto que será exibido quando estado for OFF
         \n\n"          "Abaixo veremos um exemplo de um botão toggleButton:</string>
 
-    <string name="ToggleButton.1" translatable="false">"          "Bem, chegamos ao fim deste pequeno tutorial de conceitos sobre uma View, espero que você tenha gostado do conteúdo e que ele venha a contribuir com o seu aprendizado sobre Views.
+    <string name="ToggleButton.1">"          "Bem, chegamos ao fim deste pequeno tutorial de conceitos sobre uma View, espero que você tenha gostado do conteúdo e que ele venha a contribuir com o seu aprendizado sobre Views.
         \n"          "Em breve teremos mais novidades sobre novos conceitos, até a próxima!</string>
 
     <string name="ToggleButton.1IN">"          "Bem, chegamos ao fim deste pequeno tutorial de conceitos sobre uma View, espero que você tenha gostado do conteúdo e que ele venha a contribuir com o seu aprendizado sobre Views.
         \n"          "Em breve teremos mais novidades sobre novos conceitos, até a próxima!</string>
 
-    <string name="label">5 Conceitos sobre uma View!</string>
+    <string name="label" translatable="false">5 Conceitos sobre uma View!</string>
 </resources>

@@ -7,6 +7,7 @@
         <item name="colorPrimaryDark">@color/md_yellow_500</item>
         <item name="colorAccent">@color/md_blue_400</item>
         <item name="colorButtonNormal">#558B2F</item>
+        <item name="android:navigationBarColor">@color/md_amber_400</item>
     </style>
 
     <style name="ActionBar" parent="Theme.AppCompat.Light.DarkActionBar">
